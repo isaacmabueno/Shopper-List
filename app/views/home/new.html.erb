@@ -1,0 +1,19 @@
+<h1>Add to list</h1>
+<h3>New Product</h3>
+
+<%= form_for @product, url: {action: 'create'} do  |f| %>
+  <p>
+    Item: <%= f.text_field :name %>
+  </p>
+  <p>
+  Quantity: <%= f.text_field :quantity %>
+  </p>
+  <p class = 'additem'>
+  <%= f.submit 'Add Item' %>
+  </p>
+<% end %>
+
+<!-- <h3>Don't use htis. wont' work without authenticy_token.... womp wompt</h3>
+<form action= '/create' method='post'>
+  <input type ='text' name='product[name]' value= ''>
+  <input type='text' -->
