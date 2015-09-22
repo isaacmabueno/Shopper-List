@@ -12,7 +12,7 @@
  *
  *= require_tree .
  *= require_self
- *=require bootstrap.min
+ *= require bootstrap.min
 */
 body {
     background-image: url("http://36.media.tumblr.com/046014060f9b449b44a4eaec4b0f3926/tumblr_npkzd43jsu1slhhf0o1_1280.jpg");
@@ -21,8 +21,12 @@ body {
 }
 .transparent {
   width:100%;
-  height: 10%;
+  height: 6%;
   background-color: rgba(245, 240, 225, 0.45);
+}
+.header{
+  color: rgba(137, 117, 61, 0.86) !important;
+  font-family: 'Oswald' !important;
 }
 h1 {
   color: white !important;
@@ -80,7 +84,7 @@ h5 {
   height: 600px;
   border-radius: 2%;
   border: 2px solid white;
-  margin-left: 7%;
+  margin-left: 6.5%;
 }
 .additem {
   color: rgb(52, 120, 179);
@@ -97,6 +101,14 @@ p {
 }
 .signupbox{
   font-size: 20px !important;
+}
+.ko {
+  margin-left: -10%;
+}
+ul {
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
 }
 li {
   text-align: center;
